@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <!-- Icone da barra de navegação -->
+  <link rel="shortcut icon" type="imagex/png" href="./assets/img/favicon.png">
+</head>
+<body>
+  <br>
+  <h2>Cadastre-se</h2>
+  
+  <form action="">
+    <fieldset>
+      <!-- Caixa para criar login e senha, para uso do site -->
+      <fieldset>
+        <legend>Crie sua conta</legend>
+
+        <p>
+          <label for="">E-mail</label> <br>
+          <input type="email">
+        </p>
+
+        <p>
+          <label for="">Confirmação do e-mail</label> <br>
+          <input type="email">
+        </p>
+
+        <p>
+          <label for="">Crie sua Senha</label> <br>
+          <input type="password">
+        </p>
+
+        <p>
+          <label for="">Confirmar Senha</label> <br>
+          <input type="password">
+        </p>
+
+      </fieldset>  
+      <br>
+      <!-- Caixa de seleção do tipo de cadastro do cliente -->
+      <fieldset>
+        <legend>Tipo de cadastro</legend>
+        <label for="">Pessoa fisica</label>
+        <input type="radio" name="like">
+        <br>
+
+        <br>
+        <label for="">Pessoa jurídica</label>
+        <input type="radio" name="like">
+      </fieldset>
+      <br>
+      <!-- Caixa para dados pessoais -->
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="">Nome completo</label> <br>
+          <input type="text">
+        </p>
+        
+        <p>
+          <label for="">CPF</label> <br>
+          <input type="tel" maxlength="14">
+        </p>
+
+        <p>
+          <label for="">Tel. Celular</label> <br>
+          <input type="tel" maxlength="15">
+        </p> 
+        
+        <p>
+          <label for="">Data de nascimento</label> <br>
+          <input type="date">
+        </p>
+      </fieldset>
+      <br>
+      <!-- Caixa para dados de endereço -->
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <p>
+          <label for="">CEP</label> <br>
+          <input type="tel" maxlength="9">
+          <a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php" title="Busca no correio" target="_blank"><i>Não sei meu cep </i></a>
+        </p>
+
+        <p>
+          <label for="">Endereço</label> <br>
+          <input type="text">
+        </p>
+
+        <p>
+          <label for="">Número</label> <br>
+          <input type="text" maxlength="6">
+        </p>
+
+        <p>
+          <label for="">Bairro</label> <br>
+          <input type="text" maxlength="8">
+        </p>
+
+        <p>
+          <label for="">Cidade</label> <br>
+          <input type="text" maxlength="8">
+        </p>
+
+        <p>
+          <label for="">Estado</label> <br>
+          <select name="" id="" maxlength="2">
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </p>
+      </fieldset>
+      
+      <br>
+      <!-- Botões de validação do formulario -->
+      <button type="submit"> <a href="Index.html">Cadastrar</a></button>
+      <button type="reset"><a href="pagina2.html">Desistir</a></button>
+    </fieldset>
+  </form>
+</body>
+</html>
