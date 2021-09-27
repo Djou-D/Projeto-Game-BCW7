@@ -1,4 +1,4 @@
-Esse repositório, contem o primeiro projeto desenvolvida durante o bootcamp BCW7 da SoulCode Academy.
+Esse repositório, contem o meu primeiro projeto desenvolvida durante o bootcamp BCW7 da SoulCode Academy.
 
 Na primeira etapa do projeto, o objetivo é gerar um site escrito apenas em HTML, com as descrições a seguir:
 
