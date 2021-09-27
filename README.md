@@ -1,5 +1,7 @@
 Esse repositório, contem o meu primeiro projeto desenvolvida durante o bootcamp BCW7 da SoulCode Academy.
 
+Link para o site: https://djou-d.github.io/Projeto-Game-BCW7/
+
 Na primeira etapa do projeto, o objetivo é gerar um site escrito apenas em HTML, com as descrições a seguir:
 
 Projeto Final de HTML
