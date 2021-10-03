@@ -1,0 +1,636 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Audiowide', cursive;
+}
+
+textarea, input, button{
+  border: 0;
+  outline: none;
+}
+
+/* BACKGROUND DO BODY */
+.background{
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(90deg, #444242a8, #331192bb, #60149e9c, #980ee293, rgba(145, 67, 32, 0.658));
+  background-size: 500% 500%; */
+
+  background-color: #786D94;
+
+  /* RETIRANDO SCROLL HORIZONTAL */
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+/* ESCONDENDO BARRA DE ROLAGEM VERTICAL */
+::-webkit-scrollbar {
+   width: 0px;
+   background: transparent; 
+}
+
+/* MENU, BARRA DE BUSCA E INPUTS DE LOGIN E INCREVA-SE */
+
+
+#inicio{
+  width: 100vw;
+  height: 65px;
+  display: flex;
+}
+
+/* BARRA DE BUSCA E BOTÃO */
+
+#busca{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#busca p{
+  display: flex;
+  /* justify-content: center; */
+}
+
+#barra-busca{
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#btn-busca{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(117, 211, 255, 0.637);
+  box-shadow: 1px 1px 10px rgb(2, 81, 252);
+  font-size: 1em;
+  transition: 0.3s ease-out;
+  width: 50px;
+}
+
+#btn-busca{
+  color: rgb(5, 8, 15);
+  transition: 0.4s ease-in;
+}
+
+#btn-busca:hover{
+  color: rgb(2, 81, 252);
+  transition: 0.4s ease-in-out;
+}
+
+#btn-busca:hover{
+  box-shadow: 10px 3px 15px rgb(52, 114, 250);
+  background-color: rgb(169, 223, 248);
+  transition: 0.3s ease-in-out;
+}
+
+/* LISTA DO MENU PRINCIPAL */
+#menu-principal{
+  display: flex;
+}
+
+#menu-principal ul{
+  display: flex;
+  margin: auto; 
+}
+
+#menu-principal ul li{
+  border-radius: 10px;
+  transition: 0.5s ease-out;
+  transform: translateX(0) scale(0.9);
+}
+
+#menu-principal ul li a{
+  /* border-radius: 15px; */
+  color: rgb(5, 8, 15);
+  padding: 10px;
+  margin-left: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+#menu-principal ul li:hover{
+  transition: 0.3s ease-in;
+  transform: translateX(5px) scale(1.2);
+}
+
+#menu-principal ul li a:hover{
+  color: rgb(2, 81, 252);
+  /* font-size: 0.9em; */
+  transition: 0.3s ease-in-out;
+}
+
+/* Botão de login */
+#btn-login{
+  display: flex;
+  margin: auto;
+}
+
+#btn-login button{
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(117, 211, 255, 0.637);
+  box-shadow: -1px 1px 10px rgb(2, 81, 252);
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+#btn-login button a{
+  padding: 10px;
+  color: rgb(5, 8, 15); 
+  transition: 0.4s ease-in-out;
+}
+
+#btn-login button:hover{
+  background-color: rgb(117, 211, 255);
+  box-shadow: -10px 3px 15px rgb(52, 114, 250);
+  transition: 0.3s ease-out;
+}
+
+#btn-login button a:hover{
+  color: rgb(2, 81, 252);
+  transition: 0.4s ease-in;
+}
+
+/* IMAGEM DO BANNER */
+#banner1 img{
+  box-shadow: 2px 1px 15px rgb(80, 4, 156);
+  /* transition: 0.5s ease-out; */
+}
+
+/* #banner1 img:hover{
+  box-shadow: 2px 2px 45px rgb(196, 140, 253);
+  transition: 0.3s ease-in;
+} */
+
+/* ASIDE COM PROPAGANDAS */
+#comercial{
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: rgb(5, 8, 15);
+  /* overflow: hidden; */
+}
+
+#comercial p{
+  display: block;
+  animation: go-mov 2s infinite alternate;
+}
+
+
+/* Keyframe DA ANIMAÇÃO DAS PROPAGANDAS */
+@keyframes go-mov {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* ARTICLE DO SITE */
+#artigo-site{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#artigo-site div{
+  align-content: center;
+  margin: 40px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s ease-out;
+  transform: translateX(0) scale(0.8);
+}
+
+#artigo-site div h3{
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+}
+
+#artigo-site div p{
+  color: rgb(5, 8, 15);
+  margin: 10px 10px;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 1.1em;
+}
+
+#artigo-site div:hover{
+  display: block;
+  background-color: rgba(150, 132, 167, 0.685);
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+  transition: 0.3s ease-in;
+  transform: translateX(5px) scale(0.9);
+}
+
+#artigo-site div p:hover{
+  color: rgb(2, 24, 65);
+}
+
+/* GALERIA DE IMAGENS DO CATALOGO */
+#catalogo #catalogo-1{
+  display: flex;
+  justify-content: space-around;
+}
+
+#catalogo h2:nth-child(n + 1){
+  text-align: center;
+  font-size: 2em;
+  color: rgb(5, 8, 15);
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+#catalogo figure h3{
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(5, 8, 15);
+}
+
+#catalogo figure{
+  margin: 0 -20px;
+  padding: 20px;
+}
+
+
+/* #catalogo img{
+  width: 400px;
+  height: 400px;
+  background-color: burlywood;
+} */
+
+/* PRIMEIRA COLUNA DO CATALOGO */
+#catalogo #img-1{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Dandy-Ace.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.3s ease-in;
+}
+
+#catalogo #img-1:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Dandy-Ace-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.3s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+#catalogo #img-2{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Guns-N’-Runs.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.3s ease-in;
+}
+
+#catalogo #img-2:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Guns-N’-Runs-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+#catalogo #img-3{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Kaze-and-the-Wild-Masks.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.2s ease-in;
+}
+
+#catalogo #img-3:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Kaze-and-the-Wild-Masks-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+/* SEGUNDA COLUNA DO CATALOGO */
+#catalogo #img-4{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Dandy-Ace.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.3s ease-in;
+}
+
+#catalogo #img-4:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Dandy-Ace-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.3s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+#catalogo #img-5{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Guns-N’-Runs.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.3s ease-in;
+}
+
+#catalogo #img-5:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Guns-N’-Runs-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+#catalogo #img-6{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Kaze-and-the-Wild-Masks.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.2s ease-in;
+}
+
+#catalogo #img-6:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Kaze-and-the-Wild-Masks-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+/* TERCEIRA COLUNA DO CATALOGO */
+
+#catalogo #img-7{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Dandy-Ace.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.3s ease-in;
+}
+
+#catalogo #img-7:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Dandy-Ace-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.3s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+#catalogo #img-8{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Guns-N’-Runs.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.3s ease-in;
+}
+
+#catalogo #img-8:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Guns-N’-Runs-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+#catalogo #img-9{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Kaze-and-the-Wild-Masks.jpg);
+  background-size: cover;
+  transform: translateX(0) scale(0.8);
+  transition: 0.2s ease-in;
+}
+
+#catalogo #img-9:hover{
+  width: 400px;
+  height: 250px;
+  background-image: url(../assets/catalogo-img/Kaze-and-the-Wild-Masks-2.jpg);
+  background-size: cover;
+  transform: translateX(15px) scale(1);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+}
+
+/* ULTIMOS ARTIGOS DA PAGINA 1 */
+#ultimo-artigo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+  grid-gap: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#ultimo-artigo  div{
+  margin: 50px 10px;
+  padding: 15px;
+  border-radius: 20px;
+  transition: 0.5s ease-out;
+  transform: translateX(0) scale(0.8);
+}
+
+#ultimo-artigo div h3{
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+}
+
+#ultimo-artigo div p{
+  color: rgb(5, 8, 15);
+  margin: 10px 20px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+#ultimo-artigo div:hover{
+  display: block;
+  background-color: rgba(150, 132, 167, 0.685);
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+  transition: 0.3s ease-in;
+  transform: translateX(5px) scale(1);
+}
+
+#ultimo-artigo div p:hover{
+  color: rgb(2, 24, 65);
+}
+
+/* CAIXA DE TEXTO */
+#caixa-texto form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#caixa-texto div h2{
+  text-align: center;
+  margin: 20px 10px 10px 10px;
+  font-size: 1.6em;
+  color: rgb(5, 8, 15);
+}
+
+#caixa-texto div p{
+  text-align: center;
+  margin-right: 190px;
+  margin-bottom: 20px;
+}
+
+#caixa-texto textarea{
+  resize: none;
+  background-image: url(../assets/gif/QueBom.gif);
+  background-size: contain;
+  box-shadow: 1px 1px 10px rgb(126, 31, 214);
+}
+
+#caixa-texto button{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  color: rgb(5, 8, 15);
+  margin-top: 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: rgba(117, 211, 255, 0.637);
+  box-shadow: 1px 1px 10px rgb(2, 81, 252);
+  transform: translateX(0) scale(0.9);
+  transition: 0.4s ease-in;
+}
+
+#caixa-texto textarea:hover{
+  box-shadow: -10px 3px 35px rgb(126, 31, 214);
+  animation: go-text 0.3s alternate;
+  animation-delay: 0.4s;
+  animation-iteration-count: 2;
+}
+/* ANIMAÇÃO DA CAIXA DE TEXTO */
+@keyframes go-text {
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+#caixa-texto button:hover{
+  background-color: rgb(117, 211, 255);
+  box-shadow: -10px 3px 15px rgb(52, 114, 250);
+  transform: translateX(5px) scale(1);
+  transition: 0.4s ease-out;
+
+}
+
+/* FOOTER */
+#rodape{
+  display: flex;
+  justify-content: space-between;
+  /* margin: 10px 20px 30px 30px; */
+  padding: 20px;
+}
+
+#rodape div{
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#rodape div a{
+  margin: 10px 0px;
+  padding: 15px;
+}
+
+#rodape small{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 200px;
+}
+
+#rodape #seta-cima img{
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  margin-right: 50px;
+  width: 100%;
+}
+
+#rodape #seta-cima{
+  animation: go-seta 0.6s infinite alternate;
+}
+
+/* ANIMAÇÃO DA SETA DE HOME */
+@keyframes go-seta {
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+/* LINHAS QUE DIVIDEM AS SEÇÕES DA PAGINA */
+.linhas{
+  width: 100%;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(90deg, #444242a8, #331192bb, #60149e9c, #980ee293, rgb(207, 86, 29));
+  background-size: 500% 500%;
+
+  animation: color 3s ease infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0% 25%;
+  }
+
+  50%{
+    background-position: 100% 0%;
+  }
+
+  100%{
+    background-position: 0% 25%;
+  }
+}
