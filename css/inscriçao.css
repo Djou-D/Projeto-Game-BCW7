@@ -1,0 +1,150 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #323232;
+  font-family: 'Audiowide', cursive; 
+}
+
+body{
+  height: 100%;
+}
+
+textarea, input{
+  border: 0;
+  outline: none;
+}
+
+h2{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #301775;
+}
+
+/* BACKGROUND GRADIENTE */
+.background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #000000, #150050, #200635, #6a0e9c);
+  background-size: 400% 400%;
+
+  animation:color 15s ease-in-out infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0% 25%;
+  }
+
+  50%{
+    background-position: 100% 0%;
+  }
+
+  100%{
+    background-position: 0% 25%;
+  }
+}
+
+/* CONTAINER GERAL */
+a, label{
+  font-size: 0.9rem; /*16 * .8 = x */
+}
+
+a:hover{
+  color: rgb(253, 11, 2);
+}
+
+/* CONTAINER DE LOGIN FOLRMATAÇÃO 2 */
+#cadastro-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32%;
+  height: 600px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(162, 158, 196, .75);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .7);
+  border-radius: 10px;
+}
+
+/* FORMULARIO */
+
+form{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+label, input{
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+input:focus{
+  border-bottom: 2px solid rgb(4, 191, 248);
+}
+
+input:hover{
+  border-bottom: 2px solid rgb(15, 235, 235);
+}
+
+#radio{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+#radio input{
+  background: #150050;
+}
+
+
+#cancelar{
+  text-align: right;
+  display: block;
+}
+
+input[type="submit"]{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: rgb(105, 105, 241);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(47, 47, 122);
+  transition: .8s;
+}
+
+
+/* MEDIA RESPONSIVIDADE */
+@media (max-width: 640px){
+  #cadastro-container{
+    width: 90%;
+  }
+}
