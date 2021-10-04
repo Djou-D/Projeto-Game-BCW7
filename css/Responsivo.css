@@ -1,4 +1,8 @@
 @media (max-width: 900px){
+  body{
+    width: 100vw;
+  }
+
   /* MENU E SEÇÃO DE LINKS */
   #menu-principal{
     display: flex;
@@ -146,7 +150,11 @@
     margin-left: 10px;
   }
 
-  #caixa-texto, #msg textarea{
+  #caixa-texto textarea{
+    width: 180px;
+  }
+
+  #msg textarea{
     width: 180px;
   }
 
