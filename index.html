@@ -14,43 +14,51 @@
     <!-- Icone da barra de navegação -->
     <link rel="shortcut icon" type="imagex/png" href="./assets/img/favicon.png">
 
+    <!-- CSS DA PAGINA -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Responsivo.css">
+
   </head>
+
   <body class="background">
-    <header id="inicio">
-      <form id="busca" action="index.html">
-        <p>
-         <!-- Barra de busca do site -->
-         <input id="barra-busca" type="search" name="" placeholder="  Buscar...">
-         <!-- Botão para submeter a busca -->
-         <button id="btn-busca" type="submit">OK</button>          
-       </p>
-     </form> 
+    <header id="inicio" class="menu">
+      
 
       <!-- Menu de navegação com links pelo site-->
       <nav id="menu-principal">
+        <form id="busca" action="index.html">
+          <div>
+           <!-- Barra de busca do site -->
+           <input id="barra-busca" type="search" name="" placeholder="  Buscar...">
+           <!-- Botão para submeter a busca -->
+           <button id="btn-busca" type="submit">OK</button>          
+          </div>
+       </form> 
+
         <ul>
-          <li><a href="pagina2.html#second">Feira itinerante</a></li>
+          <li><a href="main.html#second">Feira itinerante</a></li>
           <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="pagina2.html#markete-square">Praça Indie</a></li>
-          <li><a href="pagina2.html#gallery2">Galerias</a></li>
-          <li><a href="pagina2.html#gallery4">MarketPlace</a></li>
+          <li><a href="main.html#markete-square">Praça Indie</a></li>
+          <li><a href="main.html#gallery2">Galerias</a></li>
+          <li><a href="main.html#gallery4">MarketPlace</a></li>
           <li><a href="#rodape">Contatos</a></li>
         </ul>
-      </nav>  
-      <div id="btn-login">
 
-        <!-- Botão para se logar no site -->
-        <button id=""><a href="login.html" target="_blank">Entrar</a></button>
-        
+        <div id="btn-login">
+          <!-- Botão para se logar no site -->
+          <button id=""><a href="login.html" target="_blank">Entrar</a></button>
+        </div> 
+      </nav>  
+
+      
         <!-- Botão para se inscrever no site -->
         <!-- <button id="botao-inscriçao"><a href="inscriçao.html" target="_blank">Inscreva-se</a></button> -->
-      </div>  
+       
     </header>
     
      <!-- Banner com a Logo -->
     <div id="banner1">
-      <img width="100%" height="500px" src="./assets/img/banner1.jpeg" alt="Imagem da logo do site, o nome GamerIndie br formando um semi circulo">
+      <img width="100%" height="500px" src="./assets/img/banner1.jpeg" alt="Imagem da logo do site, o nome GamerIndie br formando um semi circulo entre outro" title="Banner com a logo: GamerIndie Br">
     </div>
 
     <aside id="comercial">
@@ -58,11 +66,6 @@
       <p>Uma propaganda</p>
       <p>Uma propaganda</p>
     </aside>
-     
-     <!-- Tag de audio, inicia quando se entra na pagina -->
-    <!-- <div>
-      <audio src="./assets/audio/Summer - JHS Pedals.mp3" autoplay controls loop></audio>
-    </div>  -->
 
     <!-- DIV PARA LINHA QUE VAI DIVIDIR AS SEÇÕES DO SITE -->
     <div class="linhas"></div>
@@ -199,7 +202,7 @@
       </div>
 
       <form action="">
-        <textarea wrap="" cols="62" rows="10" placeholder="Qual seu jogo indie preferido?"></textarea>
+        <textarea wrap="" cols="62" rows="10"></textarea>
 
         <button type="submit"><a href="">Enviar</a></button>
 
@@ -213,7 +216,7 @@
 
 
     <!-- Roda pé com informações de contato -->
-    <footer id="rodape">
+    <footer class="rodape">
       <div>
         <a href="">Telefone: <strong> (71)9 9999-9999</strong></a>
           
@@ -226,7 +229,7 @@
        <small>&copy; Copyright 2021, Todos os direitos reservados</small>
 
         <!-- Link para retornar ao inicio da pagina -->
-      <a href="#inicio" id="seta-cima"><img src="./assets/img/SetaU.png" alt="Uma seta para cima"></a>
+      <a href="#inicio" class="seta-cima"><img src="./assets/img/SetaU.png" alt="Uma seta para cima"><span>Voltar</span></a>
     </footer>
   </body>
 </html>

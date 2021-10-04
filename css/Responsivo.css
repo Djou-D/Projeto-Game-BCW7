@@ -1,0 +1,172 @@
+@media (max-width: 900px){
+  /* MENU E SEÇÃO DE LINKS */
+  #menu-principal{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu-principal ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  #menu-principal ul li{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #menu-principal ul li a{
+    font-size: 5vw;
+  }
+
+  #btn-busca{
+    font-size: 4vw;
+    width: 9vw;
+    margin-left: 5px;
+  }
+
+  #busca div{
+    display: flex;
+    justify-content:right;
+    align-items:flex-start;
+  }
+
+  #busca div #barra-busca{
+    display: flex;
+    margin: auto;
+    margin-left: -120px;
+  }
+
+  #btn-login{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+
+  #btn-login button a{
+    font-size: 4vw;
+  }
+
+  #banner1 img{
+    width: 100vw;
+    height: 30vh;
+  }
+
+  #comercial{
+    font-size: 4vw;
+  }
+
+  header h3{
+    font-size: 4vw;
+  }
+
+  header #nav-main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header #nav-main a img{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    width: 300px;
+  }
+
+  /* PLAYER DE AUDIO */
+  #musica{
+    width: 150px;
+    margin-left: 100px;
+  }
+
+  /* ARTIGOS DO SITE */
+  #artigo-site, #feedback{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #markete-square #novidades{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #markete-square h2{
+    margin-top: 100px;
+  }
+
+  #ultimo-artigo{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-top: 0px;
+  }
+
+
+  /* GALERIA CATALOGO PAGINA 1 */
+  #catalogo #catalogo-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #catalogo #catalogo-1 figure figcaption{
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  /* CATALOGO COMERCIAL PAGINA 2, GALERIA DE GIFS */
+  #banners-com{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #banners-com h3{
+    font-size: 5vw;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  #banners-com img{
+    width: 350px;
+  }
+
+  #banners-com .gif-lado{
+    margin: 0 auto;
+    margin: 20px 0;
+  }
+
+  /* CAIXAS DE TEXTO DO SITE */
+  #caixa-texto div h2{
+    font-size: 6vw;
+  }
+
+  #caixa-texto div p{
+    margin-left: 10px;
+  }
+
+  #caixa-texto, #msg textarea{
+    width: 180px;
+  }
+
+
+  /* FOOTER, RODAPE DO SITE */
+  .rodape{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodape small{
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+  }
+
+  .rodape .seta-cima{
+    margin-left: 230px;
+  }
+
+}
