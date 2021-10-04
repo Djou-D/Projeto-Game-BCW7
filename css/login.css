@@ -148,14 +148,6 @@ input[type="submit"]:hover{
 
 
 
-/* MEDIA RESPONSIVIDADE */
-@media (max-width: 640px){
-  #login-container{
-    width: 90%;
-  }
-}
-
-
 
 /* STILO DA TELA DE INSCRIÇÃO */
 /* CONTAINER DE LOGIN FOLRMATAÇÃO 2 */
@@ -246,9 +238,4 @@ input[type="submit"]:hover{
 }
 
 
-/* MEDIA RESPONSIVIDADE */
-@media (max-width: 640px){
-  #cadastro-container{
-    width: 90%;
-  }
-}
+
