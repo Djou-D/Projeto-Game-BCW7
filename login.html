@@ -36,8 +36,63 @@
 
     <div id="resgistrar-conta">
       <p>Ainda não tem conta?</p>
-      <a href="inscriçao.html">Inscreva-se</a>
+      <a href="#cadastro-container">Inscreva-se</a>
     </div>
   </div>
+
+  <!-- SEÇÃO DE INSCRIÇÃO -->
+  <div id="cadastro-container">
+    <form id="form1" action="">
+        <!-- Caixa para criar login e senha, para uso do site -->
+        <div>
+          <h2>Crie sua conta</h2>
+
+          <p>
+            <label for="">E-mail</label>
+            <input type="email">
+          </p>
+
+          <p>
+            <label for="">Confirmação do e-mail</label>
+            <input type="email">
+          </p>
+
+          <p>
+            <label for="">Crie sua Senha</label>
+            <input type="password">
+          </p>
+
+          <p>
+            <label for="">Confirmar Senha</label>
+            <input type="password">
+          </p>
+
+        </div>  
+        
+        <!-- Caixa de seleção do tipo de cadastro do cliente -->
+        <div>
+          <h2>Tipo de cadastro</h2>
+
+          <div id="radio">
+            <p id="radio-cli">
+              <label for="">Cliente</label>
+              <input type="radio" name="like">
+            </p>  
+            <p id="radio-dev">
+              <label for="">Desenvolvedor</label>
+              <input type="radio" name="like">
+            </p> 
+          </div>  
+
+          <!-- BÕES DE INSCRIÇÃO E CANCELAR -->
+          <input type="submit" value="Inscrever-se">
+          
+          <div id="cancelar">
+            <p></p>
+            <a href="main.html">Cancelar</a>
+          </div>
+        </div>
+      </form>  
+    </div> 
 </body>
 </html>
