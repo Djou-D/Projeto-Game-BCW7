@@ -1,0 +1,447 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Audiowide', cursive;
+}
+
+textarea, input, button{
+  border: 0;
+  outline: none;
+}
+
+/* BACKGROUND DO BODY */
+.background{
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(90deg, #444242a8, #331192bb, #60149e9c, #980ee293, rgba(145, 67, 32, 0.658));
+  background-size: 500% 500%; */
+
+  background-color: #786D94;
+
+  /* RETIRANDO SCROLL HORIZONTAL */
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+/* ESCONDENDO BARRA DE ROLAGEM VERTICAL */
+/* ::-webkit-scrollbar {
+   width: 0px;
+   background: transparent; 
+} */
+
+/* ESTILO DOS BANNERs DA PAGINA MAIN */
+.banner{
+  width: 100vw;
+  box-shadow: 2px 1px 15px rgb(80, 4, 156);
+  margin-bottom: 20px;
+}
+
+
+#barra-banner{
+  display: flex;
+}
+
+/* Player de musica */
+#musica{
+  margin-bottom: 20px;
+  display: flex;
+  margin: auto;
+  margin-right: 100px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 1px 10px rgb(2, 81, 252);
+}
+
+#musica audio{
+  filter: sepia(20%) saturate(99%) grayscale(0) contrast(99%) invert(92%);
+  height: 40px;
+  border-radius: 15px;
+}
+
+/* SETA LINK PARA A PRIMEIRA PAGINA */
+#seta-voltar span{
+  display: block;
+  padding-bottom: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+
+#seta-voltar a{
+  width: 100%;
+  display: flex;
+  margin-left: 50px;
+}
+
+#seta-voltar{
+  animation: go-home 0.6s infinite alternate;
+}
+
+/* ANIMAÇÃO DA SETA DE HOME */
+@keyframes go-home {
+  100% {
+    transform: translatex(0px);
+  }
+  0% {
+    transform: translatex(50px);
+  }
+}
+
+#barra-banner #seta-voltar img:hover{
+  border-radius: 40px;
+  box-shadow: 5px 1px 15px rgb(2, 81, 252);
+}
+
+#barra-banner a:hover span{
+  opacity: 1;
+}
+
+
+/* NAVEGAÇÃO DA PAGINA MAIN */
+header h3{
+  text-align: center;
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+  margin: 20px 0px;
+}
+
+
+header #nav-main{
+  display: flex;
+  justify-content: space-around;
+}
+
+header #nav-main a{
+  margin-left: 20px;
+  padding: 20px;
+  opacity: 0.8;
+  
+}
+
+header #nav-main a img{
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgb(2, 81, 252);
+  transform: translateX(0) scale(1);
+  transition: 0.5s ease-out;
+}
+
+header #nav-main a img:hover{
+  box-shadow: 2px 1px 25px rgb(73, 126, 241);
+  transform: translateX(5px) scale(1.2);
+  transition: 0.3s ease-in;
+}
+
+
+/* ARTICLE DA PRAÇA INDIE */
+#markete-square h2{
+  text-align: center;
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+  margin: 20px 0px;
+}
+
+#markete-square #novidades{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#novidades div{
+  align-content: center;
+  margin: 40px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s ease-out;
+  transform: translateX(0) scale(0.8);
+}
+
+#novidades h3{
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+}
+
+#novidades p{
+  color: rgb(5, 8, 15);
+  margin: 10px;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 1.1em;
+}
+
+#novidades div:hover{
+  display: block;
+  background-color: rgba(150, 132, 167, 0.685);
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+  transition: 0.3s ease-in;
+  transform: translateX(5px) scale(0.9);
+}
+
+#novidades div p:hover{
+  color: rgb(2, 24, 65);
+}
+
+/* BANNER ANIMADOS DE DIVULGAÇÃO */
+#banners-com{
+  display: flex;
+  justify-content: space-around;
+}
+
+#banners-com h3{
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#banners-com img{
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(2, 81, 252);
+  transform: translateX(0) scale(0.9);
+  transition: 0.5s ease-out;
+}
+
+#banners-com img:hover{
+  box-shadow: 2px 1px 25px rgb(73, 126, 241);
+  transform: translateX(5px) scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+#banners-com .gif-lado{
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+/* ARTICLE DE FEEDBACK */
+#feedback{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#feedback div{
+  align-content: center;
+  margin: 40px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s ease-out;
+  transform: translateX(0) scale(0.8);
+}
+
+#feedback div h3{
+  color: rgb(5, 8, 15);
+  font-size: 1.4em;
+}
+
+#feedback div p{
+  color: rgb(5, 8, 15);
+  margin: 10px 10px;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 1.1em;
+}
+
+#feedback div:hover{
+  display: block;
+  background-color: rgba(150, 132, 167, 0.685);
+  box-shadow: 1px 1px 15px rgb(126, 31, 214);
+  transition: 0.3s ease-in;
+  transform: translateX(5px) scale(0.9);
+}
+
+#feedback div p:hover{
+  color: rgb(2, 24, 65);
+}
+
+
+/* CAIXA DE TEXTO */
+#msg{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#msg form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#msg div h2{
+  text-align: center;
+  margin: 20px 10px 10px 10px;
+  font-size: 1.6em;
+  color: rgb(5, 8, 15);
+}
+
+#msg div p{
+  text-align: center;
+  margin-right: 190px;
+  margin-bottom: 20px;
+}
+
+#msg textarea{
+  resize: none;
+  background-image: url(../assets/gif/QueBom.gif);
+  background-size: contain;
+  box-shadow: 1px 1px 10px rgb(126, 31, 214);
+}
+
+#msg button{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  color: rgb(5, 8, 15);
+  margin-top: 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: rgba(117, 211, 255, 0.637);
+  box-shadow: 1px 1px 10px rgb(2, 81, 252);
+  transform: translateX(0) scale(0.9);
+  transition: 0.4s ease-in;
+}
+
+#msg textarea:hover{
+  box-shadow: -10px 3px 35px rgb(126, 31, 214);
+  animation: go-text 0.3s alternate;
+  animation-delay: 0.4s;
+  animation-iteration-count: 2;
+}
+
+/* ANIMAÇÃO DA CAIXA DE TEXTO */
+@keyframes go-text {
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+#msg button:hover{
+  background-color: rgb(117, 211, 255);
+  box-shadow: -10px 3px 15px rgb(52, 114, 250);
+  transform: translateX(5px) scale(1);
+  transition: 0.4s ease-out;
+
+}
+
+/* SEÇÃO DE BANNERS */
+section .banner{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+section h2{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: rgb(5, 8, 15);
+
+}
+
+
+/* FOOTER */
+.rodape{
+  display: flex;
+  justify-content: space-between;
+  /* margin: 10px 20px 30px 30px; */
+  padding: 20px;
+}
+
+.rodape div{
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape div a{
+  margin: 10px 0px;
+  padding: 15px;
+}
+
+.rodape small{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 200px;
+}
+
+.seta-cima span{
+  display: block;
+  padding: 10px;
+  position: absolute;
+  bottom: 3;
+  left: 0;
+  opacity: 0;
+}
+
+.seta-cima a{
+  width: 100%;
+  display: flex;
+  margin-right: 50px;
+}
+
+.rodape .seta-cima{
+  animation: go-seta 0.6s infinite alternate;
+}
+
+/* ANIMAÇÃO DA SETA DE HOME */
+@keyframes go-seta {
+  100% {
+    transform: translateY(0px);
+  }
+  0% {
+    transform: translateY(50px);
+  }
+}
+
+.rodape .seta-cima img:hover{
+  border-radius: 40px;
+  box-shadow: 5px 1px 15px rgb(2, 81, 252);
+}
+
+.seta-cima:hover span{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* LINHAS QUE DIVIDEM AS SEÇÕES DA PAGINA */
+.linhas{
+  width: 100%;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(90deg, #444242a8, #331192bb, #60149e9c, #980ee293, rgb(207, 86, 29));
+  background-size: 500% 500%;
+
+  animation: color 3s ease infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0% 25%;
+  }
+
+  50%{
+    background-position: 100% 0%;
+  }
+
+  100%{
+    background-position: 0% 25%;
+  }
+}

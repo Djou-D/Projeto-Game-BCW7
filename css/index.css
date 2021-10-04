@@ -37,27 +37,32 @@ textarea, input, button{
 /* MENU, BARRA DE BUSCA E INPUTS DE LOGIN E INCREVA-SE */
 
 
-#inicio{
-  width: 100vw;
+/* #inicio{
+  width: 100%;
   height: 65px;
+  
   display: flex;
-}
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */
 
 /* BARRA DE BUSCA E BOTÃO */
 
 #busca{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-#busca p{
+#busca div{
   display: flex;
-  /* justify-content: center; */
 }
 
 #barra-busca{
-  height: 30px;
+  /* height: 30px; */
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -67,9 +72,9 @@ textarea, input, button{
   border-radius: 10px;
   background-color: rgba(117, 211, 255, 0.637);
   box-shadow: 1px 1px 10px rgb(2, 81, 252);
-  font-size: 1em;
+  font-size: 1vw;
   transition: 0.3s ease-out;
-  width: 50px;
+  width: 4vw;
 }
 
 #btn-busca{
@@ -91,11 +96,15 @@ textarea, input, button{
 /* LISTA DO MENU PRINCIPAL */
 #menu-principal{
   display: flex;
-}
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-left: 20px;
+  align-items: center; 
+} 
 
 #menu-principal ul{
   display: flex;
-  margin: auto; 
 }
 
 #menu-principal ul li{
@@ -105,10 +114,10 @@ textarea, input, button{
 }
 
 #menu-principal ul li a{
-  /* border-radius: 15px; */
   color: rgb(5, 8, 15);
-  padding: 10px;
-  margin-left: 40px;
+  padding: 15px;
+  margin-left: 20px;
+  font-size: 1vw;
   transition: 0.3s ease-in-out;
 }
 
@@ -127,19 +136,20 @@ textarea, input, button{
 #btn-login{
   display: flex;
   margin: auto;
+  margin-left: 30px;
 }
 
 #btn-login button{
-  height: 30px;
+  /* height: 30px; */
   border-radius: 10px;
   background-color: rgba(117, 211, 255, 0.637);
   box-shadow: -1px 1px 10px rgb(2, 81, 252);
-  font-size: 1em;
   transition: 0.3s ease-in-out;
 }
 
 #btn-login button a{
-  padding: 10px;
+  padding: 15px;
+  font-size: 1vw;
   color: rgb(5, 8, 15); 
   transition: 0.4s ease-in-out;
 }
@@ -157,6 +167,8 @@ textarea, input, button{
 
 /* IMAGEM DO BANNER */
 #banner1 img{
+  width: 100vw;
+  height: 80vh;
   box-shadow: 2px 1px 15px rgb(80, 4, 156);
   /* transition: 0.5s ease-out; */
 }
@@ -189,10 +201,10 @@ textarea, input, button{
 /* Keyframe DA ANIMAÇÃO DAS PROPAGANDAS */
 @keyframes go-mov {
   from {
-    transform: translateX(50px);
+    transform: translateX(-10px);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(20px);
   }
 }
 
@@ -558,55 +570,67 @@ textarea, input, button{
 }
 
 /* FOOTER */
-#rodape{
+.rodape{
   display: flex;
   justify-content: space-between;
   /* margin: 10px 20px 30px 30px; */
   padding: 20px;
 }
 
-#rodape div{
+.rodape div{
   margin-top: -40px;
   display: flex;
   flex-direction: column;
 }
 
-#rodape div a{
+.rodape div a{
   margin: 10px 0px;
   padding: 15px;
 }
 
-#rodape small{
+.rodape small{
   display: flex;
   align-items: flex-end;
   margin-right: 200px;
 }
 
-#rodape #seta-cima img{
-  display: flex;
-  align-items: flex-start;
-  margin: auto;
-  margin-right: 50px;
-  width: 100%;
+.seta-cima span{
+  display: block;
+  padding: 10px;
+  position: absolute;
+  bottom: 3;
+  left: 0;
+  opacity: 0;
 }
 
-#rodape #seta-cima{
+.seta-cima a{
+  width: 100%;
+  display: flex;
+  margin-right: 50px;
+}
+
+.rodape .seta-cima{
   animation: go-seta 0.6s infinite alternate;
 }
 
 /* ANIMAÇÃO DA SETA DE HOME */
 @keyframes go-seta {
   100% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(50px);
+    transform: translateY(0px);
   }
   0% {
-    transform: translateY(0px);
+    transform: translateY(50px);
   }
 }
 
+.rodape .seta-cima img:hover{
+  border-radius: 40px;
+  box-shadow: 5px 1px 15px rgb(2, 81, 252);
+}
+
+.seta-cima:hover span{
+  opacity: 1;
+}
 
 
 /* LINHAS QUE DIVIDEM AS SEÇÕES DA PAGINA */
@@ -634,3 +658,4 @@ textarea, input, button{
     background-position: 0% 25%;
   }
 }
+
