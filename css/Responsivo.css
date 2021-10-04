@@ -144,12 +144,12 @@
 
   /* CAIXAS DE TEXTO DO SITE */
   #caixa-texto div h2{
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
-  #caixa-texto div p{
+  /* #caixa-texto div p{
     margin-left: 10px;
-  }
+  } */
 
   #caixa-texto textarea{
     width: 180px;
