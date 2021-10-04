@@ -178,4 +178,21 @@
     margin-left: 230px;
   }
 
+
+  /* TELAS DE LOGIN E INCRIÇÃO */
+  #login-container{
+    width: 90%;
+    border-radius: 50px;
+  }
+
+
+  #cadastro-container{
+    width: 90%;
+    height: 600px;
+    margin-top: 800px;
+    border-radius: 40px;
+    padding-bottom: 600px;
+  }
+
+
 }
