@@ -8,6 +8,11 @@
   font-family: 'Audiowide', cursive;
 }
 
+html, body{
+  width: 100%;
+}
+
+
 textarea, input, button{
   border: 0;
   outline: none;
@@ -16,16 +21,12 @@ textarea, input, button{
 /* BACKGROUND DO BODY */
 .background{
   width: 100vw;
-  height: 100vh;
-  /* background: linear-gradient(90deg, #444242a8, #331192bb, #60149e9c, #980ee293, rgba(145, 67, 32, 0.658));
-  background-size: 500% 500%; */
-
+  height: 100vw;
   background-color: #786D94;
 
   /* RETIRANDO SCROLL HORIZONTAL */
   overflow-x: hidden;
   overflow-y: scroll;
-
 }
 
 /* ESCONDENDO BARRA DE ROLAGEM VERTICAL */
@@ -34,37 +35,19 @@ textarea, input, button{
    background: transparent; 
 }
 
-/* MENU, BARRA DE BUSCA E INPUTS DE LOGIN E INCREVA-SE */
-
-
-/* #inicio{
-  width: 100%;
-  height: 65px;
-  
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-} */
-
-/* BARRA DE BUSCA E BOTÃO */
-
-#busca{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 30px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+/* MENU, BARRA DE BUSCA E INPUT DE LOGIN */
+#inicio{
+  padding: 20px;
 }
 
-#busca div{
+/* BARRA DE BUSCA E BOTÃO */
+#menu-login{
   display: flex;
+  gap: 1rem;
 }
 
 #barra-busca{
-  /* height: 30px; */
   border-radius: 10px;
-  margin-right: 10px;
 }
 
 #btn-busca{
@@ -81,7 +64,7 @@ textarea, input, button{
   color: rgb(5, 8, 15);
   transition: 0.4s ease-in;
 }
-
+/* HOVER */
 #btn-busca:hover{
   color: rgb(2, 81, 252);
   transition: 0.4s ease-in-out;
@@ -94,17 +77,29 @@ textarea, input, button{
 }
 
 /* LISTA DO MENU PRINCIPAL */
+
 #menu-principal{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-left: 20px;
-  align-items: center; 
+  justify-content: center;
+  gap: 1rem; /*ESPAÇAMENTO ENTRE OS ELEMENTOS DO NAV*/
 } 
 
+/* LOGO */
+#menu-principal .logo{
+  font-size: .8rem;
+  color: rgb(5, 8, 15);
+}
+
+#menu-principal .logo span{
+  font-size: 1.4rem;
+  color: rgb(52, 114, 250);
+  text-shadow: 1px 1px 3px rgb(169, 223, 248), 0 0 1em rgb(2, 81, 252), 0 0 .5em rgb(52, 114, 250);
+}
+
+/* LISTA DE LINKS */
 #menu-principal ul{
   display: flex;
+  gap: .8rem; /*ESPAÇAMENTO ENTRE OS LINKS DA LISTA*/
 }
 
 #menu-principal ul li{
@@ -115,68 +110,68 @@ textarea, input, button{
 
 #menu-principal ul li a{
   color: rgb(5, 8, 15);
-  padding: 15px;
-  margin-left: 20px;
-  font-size: 1vw;
-  transition: 0.3s ease-in-out;
+  padding: 10px;
+  font-size: 1.1vw;
+  transition: 0.3s ease-out;
 }
 
+/* BOTÃO DO MOBILE */
+#btn-mobile {
+  display: none;
+}
+
+/* HOVER */
 #menu-principal ul li:hover{
   transition: 0.3s ease-in;
   transform: translateX(5px) scale(1.2);
 }
 
 #menu-principal ul li a:hover{
-  color: rgb(2, 81, 252);
-  /* font-size: 0.9em; */
+  color: rgb(12, 55, 148);
   transition: 0.3s ease-in-out;
 }
 
-/* Botão de login */
-#btn-login{
-  display: flex;
-  margin: auto;
-  margin-left: 30px;
-}
-
-#btn-login button{
-  /* height: 30px; */
+/* BOTÃO DE LOGIN */
+#menu-login button:nth-child(1){
   border-radius: 10px;
   background-color: rgba(117, 211, 255, 0.637);
   box-shadow: -1px 1px 10px rgb(2, 81, 252);
   transition: 0.3s ease-in-out;
+  width: 90px;
+  height: 20px;
 }
 
-#btn-login button a{
-  padding: 15px;
-  font-size: 1vw;
-  color: rgb(5, 8, 15); 
-  transition: 0.4s ease-in-out;
-}
-
-#btn-login button:hover{
+#menu-login button:hover{
   background-color: rgb(117, 211, 255);
   box-shadow: -10px 3px 15px rgb(52, 114, 250);
+  color: rgb(2, 81, 252);
   transition: 0.3s ease-out;
 }
 
-#btn-login button a:hover{
-  color: rgb(2, 81, 252);
-  transition: 0.4s ease-in;
+/* IMAGEM DO BANNER */
+#banner1{
+  position: relative;
 }
 
-/* IMAGEM DO BANNER */
+#banner1 div:nth-child(2){
+  position: absolute;
+  top: 35%;
+  right: 16%;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(5, 8, 15);
+}
+
+
 #banner1 img{
   width: 100vw;
-  height: 80vh;
+  opacity: .3;
   box-shadow: 2px 1px 15px rgb(80, 4, 156);
-  /* transition: 0.5s ease-out; */
 }
 
-/* #banner1 img:hover{
-  box-shadow: 2px 2px 45px rgb(196, 140, 253);
-  transition: 0.3s ease-in;
-} */
+
+
 
 /* ASIDE COM PROPAGANDAS */
 #comercial{
@@ -186,14 +181,12 @@ textarea, input, button{
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+  margin-top: 20px;
+  font-size: 1.5rem;
   color: rgb(5, 8, 15);
-  /* overflow: hidden; */
 }
 
 #comercial p{
-  display: block;
   animation: go-mov 2s infinite alternate;
 }
 
@@ -212,14 +205,12 @@ textarea, input, button{
 /* ARTICLE DO SITE */
 #artigo-site{
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 #artigo-site div{
   align-content: center;
-  margin: 40px 10px;
-  padding: 10px;
+  margin: 20px 10px;
+  padding: 20px;
   border-radius: 20px;
   transition: 0.5s ease-out;
   transform: translateX(0) scale(0.8);
@@ -232,14 +223,13 @@ textarea, input, button{
 
 #artigo-site div p{
   color: rgb(5, 8, 15);
-  margin: 10px 10px;
+  margin: 10px 30px;
   text-align: justify;
   line-height: 2em;
   font-size: 1.1em;
 }
 
 #artigo-site div:hover{
-  display: block;
   background-color: rgba(150, 132, 167, 0.685);
   box-shadow: 1px 1px 15px rgb(126, 31, 214);
   transition: 0.3s ease-in;
@@ -260,8 +250,8 @@ textarea, input, button{
   text-align: center;
   font-size: 2em;
   color: rgb(5, 8, 15);
-  margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 #catalogo figure h3{
@@ -270,17 +260,10 @@ textarea, input, button{
   color: rgb(5, 8, 15);
 }
 
-#catalogo figure{
-  margin: 0 -20px;
-  padding: 20px;
-}
 
-
-/* #catalogo img{
-  width: 400px;
-  height: 400px;
-  background-color: burlywood;
-} */
+ #catalogo img{
+  border-radius: 20px;
+} 
 
 /* PRIMEIRA COLUNA DO CATALOGO */
 #catalogo #img-1{
@@ -570,28 +553,22 @@ textarea, input, button{
 }
 
 /* FOOTER */
-.rodape{
-  display: flex;
-  justify-content: space-between;
-  /* margin: 10px 20px 30px 30px; */
-  padding: 20px;
-}
-
 .rodape div{
-  margin-top: -40px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: -20px;
 }
 
 .rodape div a{
-  margin: 10px 0px;
   padding: 15px;
+  gap: 2rem;
+  color: rgb(5, 8, 15);
 }
 
 .rodape small{
   display: flex;
-  align-items: flex-end;
-  margin-right: 200px;
+  justify-content: center;
+  margin: auto 0;
 }
 
 .seta-cima span{
@@ -603,12 +580,15 @@ textarea, input, button{
   opacity: 0;
 }
 
-.seta-cima a{
-  width: 100%;
-  display: flex;
-  margin-right: 50px;
+.seta-cima{
+  display: block;
+  margin: auto; 
+  margin-right: 100px;
+  margin-top: -50px;
+  width: 50px;
 }
 
+/* ANIMAÇÃO DA SETA */
 .rodape .seta-cima{
   animation: go-seta 0.6s infinite alternate;
 }
@@ -631,6 +611,10 @@ textarea, input, button{
 .seta-cima:hover span{
   opacity: 1;
 }
+
+
+
+
 
 
 /* LINHAS QUE DIVIDEM AS SEÇÕES DA PAGINA */

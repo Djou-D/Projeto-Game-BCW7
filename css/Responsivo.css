@@ -1,13 +1,85 @@
 @media (max-width: 900px){
   body{
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100vh;
   }
 
-  /* MENU E SEÇÃO DE LINKS */
-  #menu-principal{
+  /******** MENU E SEÇÃO DE LINKS **********/
+
+  /* PAGINA 1 */
+   #menu-principal{
     display: flex;
     flex-direction: column;
+  } 
+  
+  /* BOTÃO HAMBURGER E ESTRUTURA MOBILE DO MENU */
+  #menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 94px;
+    right: 0px;
+    background: #786d94e1;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu-principal.active #menu {
+    height: calc(100vh - 94px);
+    overflow-y: auto;
+    visibility: visible;
+  }
+
+  #menu a{
+    padding: 1rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0,0,0, .05);
+  }
+
+  #btn-mobile{
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #menu-principal.active #hamburger{
+    border-top-color: transparent;
+  }
+
+  #menu-principal.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #menu-principal.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /* FIM DO MENU HAMBURGER */
+  #menu-principal .logo{
+    font-size: .8rem;
+    display: none;
   }
 
   #menu-principal ul{
@@ -17,51 +89,66 @@
   }
 
   #menu-principal ul li{
-    margin-bottom: 10px;
     text-align: center;
+    margin-top: 30px;
   }
 
   #menu-principal ul li a{
     font-size: 5vw;
-  }
+  } 
 
   #btn-busca{
     font-size: 4vw;
-    width: 9vw;
-    margin-left: 5px;
+    width: 50px;
+    height: 25px;
   }
 
-  #busca div{
+  #busca{
     display: flex;
-    justify-content:right;
-    align-items:flex-start;
+    justify-content: center;
   }
 
-  #busca div #barra-busca{
+  #barra-busca{
+    width: 200px;
+    height: 25px;
+  }
+
+  /* BOTÃO DE LOGIN */
+  #menu-login{
     display: flex;
-    margin: auto;
-    margin-left: -120px;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  #btn-login{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 10px;
+  #menu-login button:nth-child(1){
+    height: 25px;
+    margin-top: 5px;
   }
 
-  #btn-login button a{
+  #menu-login button a:nth-child(1){
     font-size: 4vw;
   }
 
+
+  /* BANNER PAGINA 1*/
   #banner1 img{
-    width: 100vw;
-    height: 30vh;
+    width: 100%; 
+    height: 100%;
   }
 
+  #banner1 div:nth-child(2){
+    position: absolute;
+    top: 40%;
+    right: 13%;
+    font-size: 0.6rem;
+  }
+
+  /* PROPAGANDA */
   #comercial{
     font-size: 4vw;
   }
 
+  /* HEADER PAGINA 2 */
   header h3{
     font-size: 4vw;
   }
@@ -77,16 +164,40 @@
     width: 300px;
   }
 
-  /* PLAYER DE AUDIO */
+  /* PLAYER DE AUDIO PAGINA 2*/
   #musica{
     width: 150px;
     margin-left: 100px;
   }
 
-  /* ARTIGOS DO SITE */
+  /* ARTIGOS DO SITE PAGINA 1*/
   #artigo-site, #feedback{
     display: flex;
     flex-direction: column;
+  }
+
+  #artigo-site div{
+    width: 130%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -50px;
+  }
+
+  #artigo-site div p{
+    font-size: 1.2em;
+    margin: 0 0;
+    padding: 10px;
+  }
+
+  #artigo-site div h3{
+    font-size: 2em;
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+
+  #artigo-site div:hover{
+    transform: translateX(0px) scale(0.7);
   }
 
   #markete-square #novidades{
@@ -114,10 +225,126 @@
     align-items: center;
   }
 
-  #catalogo #catalogo-1 figure figcaption{
-    text-align: center;
-    margin-top: -20px;
+  #catalogo-1 .catalogo-geral figure{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  /* IMAGENS DO CATALOGO */
+  /* PRIMEIRA COLUNA DO CATALOGO */
+  #catalogo #img-1{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.3s ease-in;
   }
+
+      #catalogo #img-1:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.3s ease-in;
+      }
+
+  #catalogo #img-2{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.3s ease-in;
+  }
+
+      #catalogo #img-2:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.2s ease-in;
+      }
+
+  #catalogo #img-3{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.2s ease-in;
+  }
+
+      #catalogo #img-3:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.2s ease-in;
+      }
+
+  /* SEGUNDA COLUNA DO CATALOGO */
+  #catalogo #img-4{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.3s ease-in;
+  }
+
+      #catalogo #img-4:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.3s ease-in;
+      }
+
+  #catalogo #img-5{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.3s ease-in;
+  }
+
+      #catalogo #img-5:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.2s ease-in;
+      }
+
+  #catalogo #img-6{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.2s ease-in;
+  }
+
+      #catalogo #img-6:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.2s ease-in;
+      }
+
+  /* TERCEIRA COLUNA DO CATALOGO */
+
+  #catalogo #img-7{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.3s ease-in;
+  }
+
+      #catalogo #img-7:hover{
+        transform: translateX(15px) scale(0.8);
+        transition: 0.3s ease-in;
+      }
+
+  #catalogo #img-8{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.3s ease-in;
+  }
+
+      #catalogo #img-8:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.2s ease-in;
+      }
+
+  #catalogo #img-9{
+    width: 300px;
+    height: 200px;
+    transform: translateX(0) scale(0.7);
+    transition: 0.2s ease-in;
+  }
+
+      #catalogo #img-9:hover{
+        transform: translateX(0px) scale(0.8);
+        transition: 0.2s ease-in;
+      }
 
   /* CATALOGO COMERCIAL PAGINA 2, GALERIA DE GIFS */
   #banners-com{
@@ -161,7 +388,7 @@
 
 
   /* FOOTER, RODAPE DO SITE */
-  .rodape{
+  .rodape div{
     display: flex;
     flex-direction: column;
   }
@@ -175,14 +402,19 @@
   }
 
   .rodape .seta-cima{
-    margin-left: 230px;
+    margin-right: 15px;
   }
 
 
   /* TELAS DE LOGIN E INCRIÇÃO */
-  #login-container{
-    width: 90%;
-    border-radius: 50px;
+.bg-modal{
+  width: 100vw;
+}
+
+  .modal{
+    width: 95vw;
+    border-radius: 20px;
+    margin: auto 0;
   }
 
 

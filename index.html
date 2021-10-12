@@ -16,38 +16,147 @@
 
     <!-- CSS DA PAGINA -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/loginModal.css">
     <link rel="stylesheet" href="css/Responsivo.css">
 
   </head>
 
   <body class="background">
+
+    <!----------------- INCRIÇÃO E LOGIN ------------------->
+    <!----------------------- MODAL ------------------------>
+
+    <!-- FORMULARIO DE LOGIN E SENHA -->
+    <div id="modal" class="bg-modal">
+      <div class="modal">
+         <!-- BOTÃO PARA FECHAR O MODAL -->
+         <span class="close" onclick="fecharModal()">&times;</span>
+
+        <h2>Entrar</h2>
+        <form action="">
+            <!-- CAIXA PARA COLOCAR O E-MAIL -->
+            <input type="email" nome="email" id="email" maxlength="30" autocomplete="off">
+            <label for="email">E-mail</label>
+          
+            <!-- CAIXA PARA COLOCAR A SENHA -->
+            <input type="password" name="senha" id="senha" maxlength="15">
+            <label for="password">Senha</label>
+          
+          <!-- BOTÃO PARA VALIDAR O LOGIN E SENHA -->
+          <input type="submit" value="Entrar">
+        </form>
+        <!-- BOTÃO PARA CADASTRAR=-SE NO SITE -->
+        <div id="resgistrar-conta">
+          <p>Ainda não tem conta?</p>
+          <a onclick="abrirCadastro()" href="#cadastro-container">Inscreva-se</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMULARIO DE INSCRIÇÃO -->
+    <div id="modal-cadastro" class="bg-modal">
+      <div class="modal">
+         <!-- BOTÃO PARA FECHAR O MODAL -->
+         <span class="close" onclick="fecharCadastro()">&times;</span>
+
+        <form action="">
+          <!-- Caixa para criar login e senha, para uso do site -->
+          <div>
+            <h2>Crie sua conta</h2>
+  
+            <p>
+              <label for="">E-mail</label>
+              <input type="email">
+            </p>
+  
+            <p>
+              <label for="">Confirmação do e-mail</label>
+              <input type="email">
+            </p>
+  
+            <p>
+              <label for="">Crie sua Senha</label>
+              <input type="password">
+            </p>
+  
+            <!-- <p>
+              <label for="">Confirmar Senha</label>
+              <input type="password">
+            </p> -->
+  
+          </div>  
+          
+          <!-- Caixa de seleção do tipo de cadastro do cliente -->
+          <div>
+            <h2>Tipo de cadastro</h2>
+  
+            <div id="radio">
+              <p id="radio-cli">
+                <label for="">Cliente</label>
+                <input type="radio" name="like">
+              </p>  
+              <p id="radio-dev">
+                <label for="">Desenvolvedor</label>
+                <input type="radio" name="like">
+              </p> 
+            </div>  
+  
+            <!-- BÕES DE INSCRIÇÃO E CANCELAR -->
+            <input type="submit" value="Inscrever-se">
+            
+            <div id="cancelar">
+              <p></p>
+              <a href="main.html">Cancelar</a>
+            </div>
+          </div>
+        </form>
+      </div>  
+    </div> 
+
+       <!----------------- FIM DO CONTEUDO DE INCRIÇÃO E LOGIN ------------------->
+    
+
     <header id="inicio" class="menu">
       
 
       <!-- Menu de navegação com links pelo site-->
       <nav id="menu-principal">
-        <form id="busca" action="index.html">
-          <div>
-           <!-- Barra de busca do site -->
-           <input id="barra-busca" type="search" name="" placeholder="  Buscar...">
-           <!-- Botão para submeter a busca -->
-           <button id="btn-busca" type="submit">OK</button>          
-          </div>
-       </form> 
 
-        <ul>
-          <li><a href="main.html#second">Feira itinerante</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="main.html#markete-square">Praça Indie</a></li>
-          <li><a href="main.html#gallery2">Galerias</a></li>
-          <li><a href="main.html#gallery4">MarketPlace</a></li>
-          <li><a href="#rodape">Contatos</a></li>
-        </ul>
+          <div class="logo">
+            <h2>Gamer<span>Indie</span> Br</h2>
+          </div>        
+        
+          <form id="busca" action="index.html">
+            <div>
+            <!-- Barra de busca do site -->
+            <input id="barra-busca" type="search" name="" placeholder="  Buscar...">
+            <!-- Botão para submeter a busca -->
+            <button id="btn-busca" type="submit">OK</button>          
+            </div>
+          </form> 
 
-        <div id="btn-login">
-          <!-- Botão para se logar no site -->
-          <button id=""><a href="login.html" target="_blank">Entrar</a></button>
-        </div> 
+       <!-- BOTÃO PARA RESPONSIVIDADE -->
+        
+        <div id="menu-login">
+            <!-- Botão para se logar no site -->
+            <button class="open-modal" onclick="abrirModal()">Entrar</button>
+
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+
+              <span id="hamburger"></span>
+            </button>
+
+          </div>  
+
+          <ul id="menu" role="menu">
+            <li><a href="main.html#second">Feira itinerante</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="main.html#markete-square">Praça Indie</a></li>
+            <li><a href="main.html#gallery2">Galerias</a></li>
+            <li><a href="main.html#gallery4">MarketPlace</a></li>
+            <li><a href="#rodape">Contatos</a></li>
+          </ul>
+        
       </nav>  
 
       
@@ -58,8 +167,13 @@
     
      <!-- Banner com a Logo -->
     <div id="banner1">
-      <img width="100%" height="500px" src="./assets/img/banner1.jpeg" alt="Imagem da logo do site, o nome GamerIndie br formando um semi circulo entre outro">
+      <img width="100%" height="100%" src="./assets/img/banner1.jpeg" alt="Imagem da logo do site, o nome GamerIndie br formando um semi circulo entre outro">
+      <div>
+        <h2>Gamer Indie Br</h2>
+        <p>Bem vindos ao multiverso de games independentes</p>
+      </div>
     </div>
+
 
     <aside id="comercial">
       <p>Uma propaganda</p>
@@ -94,68 +208,59 @@
       <div><h2>Catálogo</h2></div>
       
       <div id="catalogo-1">
-        <div class="catalogo">
+        <div class="catalogo-geral">
 
           <figure >
             <h3>Dandy Ace</h3>
-            <img id="img-1">
-            <figcaption>Dandy Ace</figcaption>
+            <img id="img-1" class="img-C">
           </firure>
 
           <figure>
             <h3>Guns N’ Runs</h3>
-            <img id="img-2">
-            <figcaption>Guns N’ Runs</figcaption>
+            <img id="img-2" class="img-C">
           </figure>
 
           <figure>
             <h3>Kaze and the Wild Masks</h3>
-            <img id="img-3">
-            <figcaption>Kaze and the Wild Masks</figcaption>
+            <img id="img-3" class="img-C">
           </figure>
           
         </div>
 
-        <div class="catalogo">
+        <div class="catalogo-geral">
 
           <figure>
             <h3>Dandy Ace</h3>
-            <img id="img-4">
-            <figcaption>Dandy Ace</figcaption>
+            <img id="img-4" class="img-C">
           </firure>
 
           <figure>
             <h3>Guns N’ Runs</h3>
             <img id="img-5">
-            <figcaption>Guns N’ Runs</figcaption>
           </figure>
 
           <figure>
             <h3>Kaze and the Wild Masks</h3>
-            <img id="img-6">
-            <figcaption>Kaze and the Wild Masks</figcaption>
+            <img id="img-6" class="img-C">
           </figure>
           
         </div>
 
-        <div class="catalogo">
+        <div class="catalogo-geral">
 
           <figure>
             <h3>Dandy Ace</h3>
-            <img id="img-7">
-            <figcaption>Dandy Ace</figcaption>
+            <img id="img-7" class="img-C">
           </firure>
 
           <figure>
             <h3>Guns N’ Runs</h3>
             <img id="img-8">
-            <figcaption>Guns N’ Runs</figcaption>
           </figure>
 
           <figure>
             <h3>Kaze and the Wild Masks</h3>
-            <img id="img-9">
-            <figcaption>Kaze and the Wild Masks</figcaption>
+            <img id="img-9" class="img-C">
           </figure>
           
         </div>
@@ -175,17 +280,17 @@
       
       <div>
         <h3>Gameficação</h3>
-        <p>Conheça a gameficação e interaja em um quiz sobre o multiverso indie, some pontos e descubra ambientes exclusivos do site.</p>
+        <p>Conheça a gameficação e interaja em um quiz sobre o multiverso indie, some pontos e ganhe cupons com descontos incriveis.</p>
       </div>  
 
       <div>  
         <h3>Galerias Itinerantes</h3>
-        <p>Interaja com outros fãs de games indie, junte suas ideias e comece a desenvolver, não a limite nesse multiverso de escolhas.</p>
+        <p>Interaja com outros fãs de games independentes, junte suas ideias e comece a desenvolver seus proprios jogos, não a limite nesse multiverso de escolhas.</p>
       </div>  
       
       <div>
         <h3>Multiverso Indie</h3>
-        <p>Aqui é onde você vai desbravar, entre realidades de desenvolvedores independentes, de games fantásticos.</p>
+        <p>Aqui é onde você vai desbravar, entre realidades de desenvolvedores e incubadoras, e desvendar o mistério de games fantásticos.</p>
       </div>  
     
     </article>
@@ -225,11 +330,14 @@
         <a href="">Endereço: <strong> A resposta é, 42</strong></a>
       </div>
 
-       <!-- Direitos autorais de propriedade artistica do site -->
-       <small>&copy; Copyright 2021, Todos os direitos reservados</small>
-
         <!-- Link para retornar ao inicio da pagina -->
       <a href="#inicio" class="seta-cima"><img src="./assets/img/SetaU.png" alt="Uma seta para cima"><span>Voltar</span></a>
+    
+    
+      <!-- Direitos autorais de propriedade artistica do site -->
+      <small>&copy; Copyright 2021, Todos os direitos reservados</small>
     </footer>
+
+    <script src="assets/javaScript/script.js"></script>
   </body>
 </html>
