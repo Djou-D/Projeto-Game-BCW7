@@ -1,0 +1,154 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Audiowide', cursive;
+}
+
+html, body{
+  width: 100%;
+}
+
+
+textarea, input, button{
+  border: 0;
+  outline: none;
+}
+
+/* LOGIN - POP-UP/MODAL */
+.bg-modal{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:rgba(126, 31, 214, 0.700);
+  position: fixed;
+  z-index: 2;
+  top: -150%;
+  transition: 350ms;
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(162, 158, 196, .95);
+  border-radius: 10px;
+}
+
+.modal span{
+  float: right;
+  font-size: 40px;
+  color: #d32721;
+  margin-top: -35px;
+  margin-right: -15px;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.moda span:hover{
+  transition: 350ms;
+}
+
+.modal h2{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #301775;
+}
+
+.modal a{
+  font-size: 0.9rem;
+}
+
+.modal a:hover{
+  color: rgb(181, 113, 245);
+}
+
+
+/* FORMULARIO */
+
+.modal form{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modal input{
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+}
+
+.modal label{
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+}
+
+.modal input{
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.modal input:focus{
+  border-bottom: 2px solid rgb(4, 191, 248);
+}
+
+.modal input:hover{
+  border-bottom: 2px solid rgb(15, 235, 235);
+}
+
+.modal #resgistrar-conta{
+  text-align: right;
+  display: block;
+}
+
+/* BOTÃO DE VALIDAÇÃO DO FORMULARIO */
+.modal input[type="submit"]{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 15px;
+  margin-top: 30px;
+  color: rgb(5, 8, 15);
+  background-color: rgba(117, 211, 255, 0.637);
+  box-shadow: 1px 1px 10px rgb(2, 81, 252);
+  cursor: pointer;
+  transition: .8s;
+}
+
+.modal input[type="submit"]:hover{
+  box-shadow: 10px 3px 15px rgb(52, 114, 250);
+  background-color: rgb(169, 223, 248);
+  transition: .8s;
+}
+/******** FIM DO MODAL LOGIN **********/
+
+
+#modal-cadastro #radio{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+#modal-cadastro #radio input{
+  background: #e9e5f1;
+}
+
+
+#modal-cadastro #cancelar{
+  text-align: right;
+  display: block;
+}

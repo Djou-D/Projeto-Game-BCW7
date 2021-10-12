@@ -352,28 +352,22 @@ section h2{
 
 
 /* FOOTER */
-.rodape{
-  display: flex;
-  justify-content: space-between;
-  /* margin: 10px 20px 30px 30px; */
-  padding: 20px;
-}
-
 .rodape div{
-  margin-top: -40px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: -20px;
 }
 
 .rodape div a{
-  margin: 10px 0px;
   padding: 15px;
+  gap: 2rem;
+  color: rgb(5, 8, 15);
 }
 
 .rodape small{
   display: flex;
-  align-items: flex-end;
-  margin-right: 200px;
+  justify-content: center;
+  margin: auto 0;
 }
 
 .seta-cima span{
@@ -385,12 +379,15 @@ section h2{
   opacity: 0;
 }
 
-.seta-cima a{
-  width: 100%;
-  display: flex;
-  margin-right: 50px;
+.seta-cima{
+  display: block;
+  margin: auto; 
+  margin-right: 100px;
+  margin-top: -50px;
+  width: 50px;
 }
 
+/* ANIMAÇÃO DA SETA */
 .rodape .seta-cima{
   animation: go-seta 0.6s infinite alternate;
 }
