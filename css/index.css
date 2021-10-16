@@ -237,7 +237,7 @@ textarea, input, button{
   background-color: rgba(150, 132, 167, 0.685);
   box-shadow: 1px 1px 15px rgb(126, 31, 214);
   transition: 0.3s ease-in;
-  transform: translateX(5px) scale(0.9);
+  transform: translateX(0px) scale(0.9);
 }
 
 #artigo-site div p:hover{
@@ -275,6 +275,7 @@ textarea, input, button{
   height: 250px;
   background-image: url(../assets/catalogo-img/Dandy-Ace.jpg);
   background-size: cover;
+  background-position: center;
   transform: translateX(0) scale(0.8);
   transition: 0.3s ease-in;
 }
@@ -481,7 +482,7 @@ textarea, input, button{
   background-color: rgba(150, 132, 167, 0.685);
   box-shadow: 1px 1px 15px rgb(126, 31, 214);
   transition: 0.3s ease-in;
-  transform: translateX(5px) scale(1);
+  transform: translateX(0px) scale(1);
 }
 
 #ultimo-artigo div p:hover{
@@ -615,10 +616,6 @@ textarea, input, button{
 .seta-cima:hover span{
   opacity: 1;
 }
-
-
-
-
 
 
 /* LINHAS QUE DIVIDEM AS SEÇÕES DA PAGINA */

@@ -79,11 +79,6 @@
               <input type="password">
             </p>
   
-            <!-- <p>
-              <label for="">Confirmar Senha</label>
-              <input type="password">
-            </p> -->
-  
           </div>  
           
           <!-- Caixa de seleção do tipo de cadastro do cliente -->
@@ -118,7 +113,6 @@
 
     <header id="inicio" class="menu">
       
-
       <!-- Menu de navegação com links pelo site-->
       <nav id="menu-principal">
 
@@ -141,7 +135,8 @@
             <!-- Botão para se logar no site -->
             <button class="open-modal" onclick="abrirModal()">Entrar</button>
 
-            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <!-- BOTÃO PARA O MENU MOBILE -->
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
 
               <span id="hamburger"></span>
             </button>
@@ -153,7 +148,7 @@
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="main.html#markete-square">Praça Indie</a></li>
             <li><a href="main.html#gallery2">Galerias</a></li>
-            <li><a href="main.html#gallery4">MarketPlace</a></li>
+            <li><a href="marketplace.html">MarketPlace</a></li>
             <li><a href="#rodape">Contatos</a></li>
           </ul>
         
@@ -338,6 +333,21 @@
       <small>&copy; Copyright 2021, Todos os direitos reservados</small>
     </footer>
 
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <!-- JS DO VLIBRAS -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO VLIBRAS -->
+
+    <!-- JS DA PAGINA -->
     <script src="assets/javaScript/script.js"></script>
   </body>
 </html>
