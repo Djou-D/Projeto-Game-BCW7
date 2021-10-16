@@ -1,9 +1,8 @@
-@media (max-width: 900px){
+@media (max-width: 800px){
   body{
     width: 100%;
     height: 100vh;
   }
-
   /******** MENU E SEÇÃO DE LINKS **********/
 
   /* PAGINA 1 */
@@ -17,7 +16,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    top: 94px;
+    top: 89px;
     right: 0px;
     background: #786d94e1;
     height: 0;
@@ -28,7 +27,7 @@
   }
 
   #menu-principal.active #menu {
-    height: calc(100vh - 94px);
+    height: calc(100vh - 89px);
     overflow-y: auto;
     visibility: visible;
   }
@@ -75,17 +74,26 @@
     transform: rotate(-135deg);
     top: -7px;
   }
-
   /* FIM DO MENU HAMBURGER */
+  
+  /* HEADER PAGINA 1 */
+  /* NAV */
   #menu-principal .logo{
-    font-size: .8rem;
     display: none;
+  }
+
+  #menu-login2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
   }
 
   #menu-principal ul{
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    width: 100vw;
   }
 
   #menu-principal ul li{
@@ -97,8 +105,9 @@
     font-size: 5vw;
   } 
 
+  /* BARRA E BOTÃO DE BUSCA */
   #btn-busca{
-    font-size: 4vw;
+    font-size: 1em;
     width: 50px;
     height: 25px;
   }
@@ -138,83 +147,116 @@
 
   #banner1 div:nth-child(2){
     position: absolute;
-    top: 40%;
-    right: 13%;
-    font-size: 0.6rem;
+    top: 30%;
+    left: 20%;
+    transition: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+  #banner1 div:nth-child(2) p{
+    font-size: .6rem;
   }
 
   /* PROPAGANDA */
-  #comercial{
-    font-size: 4vw;
+  #comercial p{
+    font-size: .8rem;
   }
 
   /* HEADER PAGINA 2 */
   header h3{
-    font-size: 4vw;
+    font-size: .9rem;
+    margin-top: -5px;
   }
 
   header #nav-main{
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   header #nav-main a img{
-    margin-top: 25px;
-    margin-bottom: 40px;
-    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+  }
+
+  /* CARROSSEL DE IMAGENS PAGINA 2 */
+  .carrossel{
+    height: 60vw;
+  }
+  
+  .carrossel .fotos img{
+    width: 19.7%;
+    height: 61vw;
   }
 
   /* PLAYER DE AUDIO PAGINA 2*/
   #musica{
-    width: 150px;
-    margin-left: 100px;
+    display: none;
   }
 
-  /* ARTIGOS DO SITE PAGINA 1*/
+  /* ARTIGOS DO SITE PAGINA 1 E PAGINA 2 FEEDBACK*/
   #artigo-site, #feedback{
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  #feedback div{
+    margin-bottom: -10px;
+    margin-top: -20px;
+    width: 110vw;
+    margin-left: -1px;
+  }
+
+  #feedback div h2{
+    margin-bottom: 20px;
   }
 
   #artigo-site div{
-    width: 130%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -50px;
+    width: 110vw;
+    align-content: center;
+    margin-top: -5vh;
+    margin-bottom: -10vh;
   }
 
   #artigo-site div p{
     font-size: 1.2em;
     margin: 0 0;
-    padding: 10px;
   }
 
   #artigo-site div h3{
-    font-size: 2em;
-    margin-top: auto;
+    font-size: 1.5em;
     margin-bottom: 30px;
-  }
-
-  #artigo-site div:hover{
-    transform: translateX(0px) scale(0.7);
   }
 
   #markete-square #novidades{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+  }
+
+  #markete-square #novidades div{
+    margin-bottom: -10px;
+    margin-top: -20px;
+    width: 110vw;
+    margin-left: -20px;
   }
 
   #markete-square h2{
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+
+  #markete-square div h3{
+    margin-bottom: 20px;
   }
 
   #ultimo-artigo{
     display: grid;
     grid-template-columns: 1fr;
     max-width: 600px;
-    margin-top: 0px;
+    margin: 0 auto;
+    
   }
 
 
@@ -236,47 +278,47 @@
   /* IMAGENS DO CATALOGO */
   /* PRIMEIRA COLUNA DO CATALOGO */
   #catalogo #img-1{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-1:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.3s ease-in;
+        transition: 0.3s ease;
       }
 
   #catalogo #img-2{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-2:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease;
       }
 
   #catalogo #img-3{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.2s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-3:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease;
       }
 
   /* SEGUNDA COLUNA DO CATALOGO */
   #catalogo #img-4{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-4:hover{
@@ -284,66 +326,68 @@
         transition: 0.3s ease-in;
       }
 
+     
   #catalogo #img-5{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
+    
   }
 
       #catalogo #img-5:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease;
       }
 
   #catalogo #img-6{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.2s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-6:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease;
       }
 
   /* TERCEIRA COLUNA DO CATALOGO */
 
   #catalogo #img-7{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-7:hover{
         transform: translateX(15px) scale(0.8);
-        transition: 0.3s ease-in;
+        transition: 0.3s ease;
       }
 
   #catalogo #img-8{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-8:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease;
       }
 
   #catalogo #img-9{
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 70vw;
     transform: translateX(0) scale(0.7);
-    transition: 0.2s ease-in;
+    transition: 0.3s ease;
   }
 
       #catalogo #img-9:hover{
         transform: translateX(0px) scale(0.8);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease;
       }
 
   /* CATALOGO COMERCIAL PAGINA 2, GALERIA DE GIFS */
@@ -354,29 +398,28 @@
   }
 
   #banners-com h3{
-    font-size: 5vw;
+    font-size: 1em;
     margin-bottom: 30px;
     margin-top: 5px;
     padding: 0;
   }
 
   #banners-com img{
-    width: 350px;
+    width: 98vw;
   }
 
   #banners-com .gif-lado{
     margin: 0 auto;
-    margin: 20px 0;
+  }
+
+  #banners-com img:hover{
+    transform: translateX(0) scale(1);
   }
 
   /* CAIXAS DE TEXTO DO SITE */
   #caixa-texto div h2{
     font-size: 5vw;
   }
-
-  /* #caixa-texto div p{
-    margin-left: 10px;
-  } */
 
   #caixa-texto textarea{
     width: 180px;
@@ -402,7 +445,7 @@
   }
 
   .rodape .seta-cima{
-    margin-right: 15px;
+    margin-right: 30px;
   }
 
 

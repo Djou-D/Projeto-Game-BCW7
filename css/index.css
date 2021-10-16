@@ -46,18 +46,33 @@ textarea, input, button{
   gap: 1rem;
 }
 
+/* LOGO */
+#menu-principal .logo{
+  font-size: .9rem;
+  color: rgb(5, 8, 15);
+  margin-top: -5px;
+}
+
+#menu-principal .logo span{
+  font-size: 1.6rem;
+  color: rgb(52, 114, 250);
+  text-shadow: 1px 1px 3px rgb(169, 223, 248), 0 0 1em rgb(2, 81, 252), 0 0 .5em rgb(52, 114, 250);
+}
+
 #barra-busca{
-  border-radius: 10px;
+  border-radius: 5px;
+  height: 20px;
 }
 
 #btn-busca{
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(117, 211, 255, 0.637);
   box-shadow: 1px 1px 10px rgb(2, 81, 252);
   font-size: 1vw;
   transition: 0.3s ease-out;
   width: 4vw;
+  height: 20px;
 }
 
 #btn-busca{
@@ -84,17 +99,6 @@ textarea, input, button{
   gap: 1rem; /*ESPAÇAMENTO ENTRE OS ELEMENTOS DO NAV*/
 } 
 
-/* LOGO */
-#menu-principal .logo{
-  font-size: .8rem;
-  color: rgb(5, 8, 15);
-}
-
-#menu-principal .logo span{
-  font-size: 1.4rem;
-  color: rgb(52, 114, 250);
-  text-shadow: 1px 1px 3px rgb(169, 223, 248), 0 0 1em rgb(2, 81, 252), 0 0 .5em rgb(52, 114, 250);
-}
 
 /* LISTA DE LINKS */
 #menu-principal ul{
@@ -103,15 +107,14 @@ textarea, input, button{
 }
 
 #menu-principal ul li{
-  border-radius: 10px;
   transition: 0.5s ease-out;
   transform: translateX(0) scale(0.9);
 }
 
 #menu-principal ul li a{
   color: rgb(5, 8, 15);
-  padding: 10px;
-  font-size: 1.1vw;
+  padding: 5px;
+  font-size: 1.3vw;
   transition: 0.3s ease-out;
 }
 
@@ -120,20 +123,21 @@ textarea, input, button{
   display: none;
 }
 
-/* HOVER */
+/* HOVER DOS LINKS DO MENU*/
 #menu-principal ul li:hover{
   transition: 0.3s ease-in;
   transform: translateX(5px) scale(1.2);
 }
 
 #menu-principal ul li a:hover{
-  color: rgb(12, 55, 148);
+  color: rgb(47, 95, 199);
   transition: 0.3s ease-in-out;
+  text-shadow: 1px 1px 3px rgb(169, 223, 248), 0 0 1em rgb(2, 81, 252), 0 0 .5em rgb(52, 114, 250);
 }
 
 /* BOTÃO DE LOGIN */
 #menu-login button:nth-child(1){
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(117, 211, 255, 0.637);
   box-shadow: -1px 1px 10px rgb(2, 81, 252);
   transition: 0.3s ease-in-out;
@@ -176,7 +180,7 @@ textarea, input, button{
 /* ASIDE COM PROPAGANDAS */
 #comercial{
   width: auto;
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -233,7 +237,7 @@ textarea, input, button{
   background-color: rgba(150, 132, 167, 0.685);
   box-shadow: 1px 1px 15px rgb(126, 31, 214);
   transition: 0.3s ease-in;
-  transform: translateX(5px) scale(0.9);
+  transform: translateX(0px) scale(0.9);
 }
 
 #artigo-site div p:hover{
@@ -271,6 +275,7 @@ textarea, input, button{
   height: 250px;
   background-image: url(../assets/catalogo-img/Dandy-Ace.jpg);
   background-size: cover;
+  background-position: center;
   transform: translateX(0) scale(0.8);
   transition: 0.3s ease-in;
 }
@@ -462,7 +467,7 @@ textarea, input, button{
 
 #ultimo-artigo div h3{
   color: rgb(5, 8, 15);
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 #ultimo-artigo div p{
@@ -477,7 +482,7 @@ textarea, input, button{
   background-color: rgba(150, 132, 167, 0.685);
   box-shadow: 1px 1px 15px rgb(126, 31, 214);
   transition: 0.3s ease-in;
-  transform: translateX(5px) scale(1);
+  transform: translateX(0px) scale(1);
 }
 
 #ultimo-artigo div p:hover{
@@ -599,7 +604,7 @@ textarea, input, button{
     transform: translateY(0px);
   }
   0% {
-    transform: translateY(50px);
+    transform: translateY(20px);
   }
 }
 
@@ -611,10 +616,6 @@ textarea, input, button{
 .seta-cima:hover span{
   opacity: 1;
 }
-
-
-
-
 
 
 /* LINHAS QUE DIVIDEM AS SEÇÕES DA PAGINA */

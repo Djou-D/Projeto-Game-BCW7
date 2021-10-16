@@ -23,21 +23,48 @@
     <body class="background">
       <header id="second">
 
-        <!-- Banner da Feira -->
-        <img class="banner" src="./assets/img/BannerAfeira.jpeg" alt="Um banner divido por três imagens de jogos indies">
+        <nav id="menu-principal">
 
-        <div id="barra-banner">
+          <!-- BOTÃO PARA RESPONSIVIDADE -->
+        
+        <div id="menu-login2">
 
-          <!-- Seta Link para pagina principal -->  
-          <div id="seta-voltar">
-            <a href="index.html"><img src="./assets/img/SetaR.png" alt="Uma seta para a esquerda"><span>Voltar</span></a>
-          </div>
-
-         <!-- Tag de audio, inicia quando se entra na pagina -->
-          <div id="musica">
-            <audio src="./assets/audio/Summer - JHS Pedals.mp3" autoplay controls loop></audio>
+           <!-- LOGO -->
+           <div class="logo2">
+            <a href="index.html"><h2>Gamer<span>Indie</span> Br</h2></a>
           </div> 
-      </div>
+          
+          <button aria-label="Abrir" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+
+            <span id="hamburger"></span>
+          </button>
+
+        </div> 
+
+          <!-- MENU DE NAVEGAÇÃO -->
+          <ul id="menu" role="menu">
+            <li><a href="index.html#catalogo">Catálogo</a></li>
+            <li><a href="main.html#markete-square">Praça Indie</a></li>
+            <li><a href="#gallery2">Galerias</a></li>
+            <li><a href="marketplace.html">MarketPlace</a></li>
+            <li><a href="#rodape2">Contatos</a></li>
+          </ul>
+
+          <!-- Tag de audio, inicia quando se entra na pagina -->
+          <div id="musica">
+            <audio src="./assets/audio/Summer - JHS Pedals.mp3"  controls loop></audio>
+          </div> 
+        </nav>
+        <!-- CARROSSEL DE IMAGENS -->
+        <section class="carrossel"> 
+            <div class="fotos">
+              <img src="assets/img/img-1.jpg" alt="Foto 1">
+              <img src="assets/img/img-2.jpg" alt="Foto 2">
+              <img src="assets/img/img-4.jpg" alt="Foto 4">
+              <img src="assets/img/img-3.jpg" alt="Foto 3">
+              <img src="assets/img/img-1.jpg" alt="Foto 1">
+            </div>  
+        </section> 
 
         <!-- DIV PARA LINHA QUE VAI DIVIDIR AS SEÇÕES DO SITE -->
         <div class="linhas"></div>
@@ -54,7 +81,7 @@
 
             <a href="#gallery3"><img width="150px" src="./assets/gif/logoGaleriaJ.gif" alt=""></a>
 
-            <a href="#gallery4"><img width="150px" src="./assets/gif/logoMarketplace.gif" alt=""></a>
+            <!-- <a href="#gallery4"><img width="150px" src="./assets/gif/logoMarketplace.gif" alt=""></a> -->
           </nav>
         </div>  
       </header>
@@ -165,22 +192,12 @@
 
       </section>
 
-      <!-- DIV PARA LINHA QUE VAI DIVIDIR AS SEÇÕES DO SITE -->
-      <div class="linhas"></div>
-
-      <!-- Banner quatro da galeria de banners, Marketplace -->
-      <section id="gallery4">
-
-        <h2>MarketPlace</h2>
-        <img class="banner" src="./assets/img/BannerMarketplace.jpeg" alt="Um banner">
-
-      </section>
 
       <!-- DIV PARA LINHA QUE VAI DIVIDIR AS SEÇÕES DO SITE -->
       <div class="linhas"></div>
 
       <!-- O rodapé do site, com informações de contato -->
-      <footer class="rodape">
+      <footer id="rodape2" class="rodape">
         <div>
           <a href="">Phone Number: <strong> (71)9 9999-9999</strong></a>
           
@@ -194,5 +211,21 @@
         <!-- Seta para o inicio da pagina -->
         <a href="#second" class="seta-cima"><img src="./assets/img/SetaU.png" alt="Uma seta para cima"><span>Voltar</span></a>
       </footer>
+
+      <!-- VLIBRAS -->
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <!-- JS DO VLIBRAS -->
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      <!-- FIM DO VLIBRAS -->
+
+      <script src="assets/javaScript/script.js"></script>
     </body>
 </html>
