@@ -4,6 +4,8 @@ Link para o site: https://djou-d.github.io/Projeto-Game-BCW7/
 
 Na primeira etapa do projeto, o objetivo é gerar um site escrito apenas em HTML, com as descrições a seguir:
 
+Nas etapas seguintes, serão aplicados o CSS e o javaScript.
+
 Projeto Final de HTML
 
 
